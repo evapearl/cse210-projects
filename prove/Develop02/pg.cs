@@ -12,10 +12,10 @@ public class PromptGenerator
         "If I had one thing I could do over today, what would it be? "
     };
 
-    public void showprompt()
+    public void Showprompt()
     {
         randomGenerator = new Random();
         userprompt =randomGenerator.next(this._promptList.count);
-        console.writeLine(userprompt);
+        Console.WriteLine(userprompt);
     }
 }

@@ -1,13 +1,13 @@
 using System;
 
-public class Reference
+public class reference
 {
     private string _book;
     private int _chapter;
     private int _beginVerse;
     private int _endVerse;
 
-    public Reference(string book, int chapter, int beginVerse, int endVerse)
+    public reference(string book, int chapter, int beginVerse, int endVerse)
     { 
         this. _book = book;
         this. _chapter = chapter;
@@ -18,13 +18,11 @@ public class Reference
     {
         if (_beginVerse == _endVerse)
         { 
-            Reference = ($"{_book} {_chapter}:{_beginVerse}");
-            return Reference;
+            return $"{_book} {_chapter} : {_beginVerse}";
         }
         else
         {
-            Reference = ($"{_book} {_chapter}:{_beginVerse}-{_endVerse}");
-            return Reference;
+            return $"{_book} {_chapter}:{_beginVerse}-{_endVerse}";
         }
     }
 }

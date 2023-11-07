@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 
-public class Scripture
+public class scripture
 {
-    private List<Word> _words;
-    private List <Reference> _reference;
+    private List<word> _words;
+    private List <reference> _reference;
 
-    public Scripture(string book,int chapter, int verse, string text)
+    public scripture(string book,int chapter, int verse, string text)
     {
-        _words = new List<Word> ();
-        _reference =new Reference(book, chapter, verse);
+        _words = new List<word> ();
+        _reference =new reference(book, chapter, verse);
     }
 
     public void HideWords()
@@ -19,16 +19,16 @@ public class Scripture
 
     public string GetRenderedText ()
     {
-        string words = $"{Reference} >>> {_text}";
+        string words = $"{reference} >>> {_text}";
         return words;
     }
     string[] splitText = text.split(' ');
-    foreach (string word in splitText)
+        foreach (string word in splitText)
     {
         _word.Add(word);
     }
 
-    public void IsCompletelyHidden()
+    public void isCompletelyHidden()
     {
         return _words;
     }

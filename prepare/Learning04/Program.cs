@@ -7,11 +7,11 @@ class Program
         Assignment a1 = new Assignment("Rose Gary", "Multiplication");
         Console.WriteLine(a1.GetSummary());
 
-        Assignment a2 = new MathAssignment("Rolian Hansen", "Fractions", "7.3", "8-19");
+        MathAssignment a2 = new MathAssignment("Rolian Hansen", "Fractions", "7.3", "8-19");
         Console.WriteLine(a2.GetSummary());
         Console.WriteLine(a2.GetHomeworkList());
 
-       Assignment a3 = new WritingAssignment("Evans Joel", "African History", "The Stop to the killing of Twins");
+       WritingAssignment a3 = new WritingAssignment("Evans Joel", "African History", "The Stop to the killing of Twins");
         Console.WriteLine(a3.GetSummary());
         Console.WriteLine(a3.GetWritingInformation());
     }
