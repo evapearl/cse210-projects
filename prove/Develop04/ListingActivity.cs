@@ -6,11 +6,13 @@ namespace Develop04
     {
         private List <string> _promptList;
         private string _randomp {get; set;}
+        private string _activityName;
+        private string _activityDescription;
 
         public ListingActivity(): base()
         {
-            SetActivityName("Listing Activity");
-            SetActivityDescription("This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
+            _activityName("Listing Activity");
+            _activityDescription("This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
 
             _promptList = new List<string>
             {
@@ -39,7 +41,7 @@ namespace Develop04
         
         public void ListingCount()
         {
-            DateTime startTime = Date.Now;
+            DateTime startTime = DateTime.Now;
             DateTime futureTime = startTime.AddSeconds(GetDuration());
             DateTime CurrentTime = DateTime.Now;
             int count = 0;

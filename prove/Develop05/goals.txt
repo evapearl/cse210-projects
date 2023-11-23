@@ -1,0 +1,4 @@
+0
+SimpleGoal : Name: Give a talk, Description: Speak in sacrament meeting when asked, Points : 100
+EternalGoal : Name: Study the  scriptures, Description: Study for atleast 10 minutes daily, Points: 50
+GoalCheckList : Name: Atttended the Temple, Description: participate in temple ordinance, Points: 50, Hit: 3, Bonus : 500, Progress : 0

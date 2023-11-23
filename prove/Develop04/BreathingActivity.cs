@@ -6,11 +6,11 @@ namespace Develop04
     {
         public BreathingActivity() : base()
         { 
-            SetActivityName("Breathing Activity"); 
-            SetdescribBreathe("This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.");
+            _activityName("Breathing Activity"); 
+            _description("This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.");
         }
 
-        public void RunBreathingActivity()
+        public void RunBreatheActivity()
         {
             RunActivityStart();
             Displayreply();
