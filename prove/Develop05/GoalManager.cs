@@ -128,7 +128,7 @@ public class GoalManager
                     int numberTimes = int.Parse(entries[5]);
                     int bonusPoints = int.Parse(entries[6]);
                     int counter = int.Parse(entries[7]);
-                    GoalChecklist clGoal = new GoalChecklist(type, name, description, points, Boolean status, numberTimes, bonusPoints, counter);
+                    GoalChecklist clGoal = new GoalChecklist(type, name, description, points, status, numberTimes, bonusPoints, counter);
                     AddGoal(clGoal);
                 }
             }
