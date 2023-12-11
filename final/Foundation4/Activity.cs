@@ -2,20 +2,19 @@ using System;
 
 public abstract class Activity
 {
-    private string _Adate {get; set;}
+    private string _date {get; set;}
     private double _length {get; set;}
 
-    public Activity(double length, string date)
+    public Activity(double length)
     {
         _length = length;
-        _Adate = date;
     }
 
     public string GetDate()
     {
-        DateTime date = DateTime.now;
-        string _Adate = date.ToString("DD MM YYYY");
-        return _Adate;
+        DateTime date = DateTime.Now;
+        string _date = date.ToString("DD MM YYYY");
+        return _date;
     }
 
     public double GetLength()
@@ -25,5 +24,6 @@ public abstract class Activity
 
     public abstract double CalculateDistance();
     public abstract double CalculateSpeed();
-    public abstract double CalculateSummary();
+    public abstract double CalculatePace();
+    public abstract void DisplaySummary();
 }

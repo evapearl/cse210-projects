@@ -6,6 +6,8 @@ class Program
     {
         //Console.WriteLine("Hello Foundation4 World!");
 
+        List<Activity> activityList = new List<Activity>();
+
         Running running = new Running(30, 5);
         activityList.Add(running);
 

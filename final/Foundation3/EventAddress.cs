@@ -5,7 +5,7 @@ public class EventAddress
     private string _street {get; set;} 
     private string _city {get; set;}
     private string _state {get; set;}
-    private string _country {get; set}
+    private string _country {get; set;}
 
     public EventAddress (string street, string city, string state, string country)
     {

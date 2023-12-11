@@ -4,26 +4,25 @@ public abstract class Running : Activity
 {
     private double _distance {get; set;}
 
-    public Running(double length, double distance) : base(length, date)
+    public Running(double length, double distance) : base(length)
     {
         _distance = distance;
     }
 
     public override double CalculateSpeed()
     {
-        double speed = CalculateDistance() / GetLength() * 60;
-        return _speed;
+        return CalculateDistance() / GetLength() * 60;
     }
 
     public override double CalculateDistance()
     {
+
         return _distance;
     }
 
     public override double CalculatePace()
     {
-        double pace = GetLength() / CalculateDistance();
-        return pace;
+        return GetLength() / CalculateDistance();    
     }
 
     public override void DisplaySummary()
